@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RadioButton
+        android:id="@+id/option1radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:text="Option1" />
+
+    <RadioButton
+        android:id="@+id/option2radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option1radioButton"
+        android:layout_below="@+id/option1radioButton"
+        android:layout_marginTop="18dp"
+        android:text="Option2" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/option2radioButton"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="34dp" >
+
+        <RadioButton
+            android:id="@+id/radioselection1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Selection1" />
+
+        <RadioButton
+            android:id="@+id/radioselection2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selection2" />
+
+        <RadioButton
+            android:id="@+id/radioselection3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selection3" />
+        
+        <RadioButton
+            android:id="@+id/radioselection4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Selection4" />
+        
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/selection1checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option2radioButton"
+        android:layout_below="@+id/radiogroup"
+        android:layout_marginTop="25dp"
+        android:text="Selection1" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radiogroup"
+        android:layout_below="@+id/selection1checkBox"
+        android:layout_marginTop="30dp"
+        android:text="ToggleButton" />
+
+</RelativeLayout>
