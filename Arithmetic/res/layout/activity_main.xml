@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/vil"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/resultbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entervalueeditText"
+        android:layout_alignRight="@+id/entervalueeditText"
+        android:layout_below="@+id/entervalueeditText"
+        android:layout_marginTop="32dp"
+        android:text="Result" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resultbutton"
+        android:layout_alignRight="@+id/resultbutton"
+        android:layout_below="@+id/resultbutton"
+        android:layout_marginTop="32dp"
+        android:text="Clear" />
+
+    <EditText
+        android:id="@+id/nameeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entervalueeditText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/entervalueeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameeditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
